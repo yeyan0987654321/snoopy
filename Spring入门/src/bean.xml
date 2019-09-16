@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+        <!-- <bean id="say" class="com.pojo.JavaBean">
+		 <property name="say" value="你好，世界"></property>
+		 </bean> -->
+		 <bean id="card1" class="com.pojo.Card">
+		 <property name="cId" value="#{'511381XXX'}"></property>
+		 </bean>
+		 <bean id="Student" class="com.pojo.Student">
+		 <property name="bool" value="#{true}"></property>
+		 <property name="card2" value="#{card1}"></property>
+		 <property name="dou" value="#{8.00}"></property>
+		 <property name="id" value="#{2019}"></property>
+		 <property name="name" value="#{'王阳明'}"></property>
+		 <property name="arrs">
+		 <list>
+		 <value>小明</value>
+		 <value>小芳</value>
+		 <value>小华</value>
+		 </list>
+		 </property>
+		  <property name="list">
+		 <list>
+		 <value>小明</value>
+		 <value>小芳</value>
+		 <value>小华</value>
+		 </list>
+		 </property>
+		 </bean>
+ </beans>
